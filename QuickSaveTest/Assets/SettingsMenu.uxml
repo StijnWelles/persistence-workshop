@@ -1,0 +1,29 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" editor-extension-mode="False">
+    <Style src="UI Toolkit/Workshop.uss" />
+    <ui:VisualElement class="screen screen--menu">
+
+        <ui:VisualElement name="MainPanel" class="panel">
+            <ui:Label text="Schatzoeker" class="title" />
+            <ui:Button name="ContinueButton" text="Verder spelen" />
+            <ui:Button name="NewGameButton" text="Nieuw spel" />
+            <ui:Button name="LoadButton" text="Spel laden" />
+            <ui:Button name="QuitButton" text="Afsluiten" />
+            <ui:Label name="MessageLabel" class="message" />
+        </ui:VisualElement>
+
+        <ui:VisualElement name="NewGamePanel" class="panel hidden">
+            <ui:Label text="Nieuw spel" class="title" />
+            <ui:Label text="Hoe heet je?" />
+            <ui:TextField name="NameInput" />
+            <ui:Button name="StartButton" text="Start" />
+            <ui:Button name="NewGameBackButton" text="Terug" />
+        </ui:VisualElement>
+
+        <ui:VisualElement name="LoadPanel" class="panel hidden">
+            <ui:Label text="Spel laden" class="title" />
+            <ui:ScrollView name="SlotList" class="slot-list" />
+            <ui:Button name="LoadBackButton" text="Terug" />
+        </ui:VisualElement>
+
+    </ui:VisualElement>
+</ui:UXML>
